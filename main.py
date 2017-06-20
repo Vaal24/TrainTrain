@@ -50,9 +50,9 @@ def nextTrain(depart,destination):
 
 	return json.dumps(dataFinal)
 
-
-print nextTrain('Nivelles','Yvoir')
-print nextTrain('Nivelles','Ath')
+if __name__ == "__main__":
+	print nextTrain('Nivelles','Yvoir')
+	print nextTrain('Nivelles','Ath')
 
 
 
