@@ -47,7 +47,7 @@ def nextTrain(depart,destination):
 			if d1.get('Train') == d2.get('Train'):
 				dataFinal.append({'Departure time':d2.get('Depart'),'Delay':d2.get('delay'),'Duration':d1.get('Duration')})
 
-
+	dataFinal = dataFinal[0:3]
 
 	return json.dumps(dataFinal)
 
