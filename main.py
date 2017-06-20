@@ -16,7 +16,6 @@ def nextTrain(depart,destination):
 	res = json.loads(res)
 
 
-	# Boucle sur les départs
 	data = []
 	for connection in res.get('connection'):
 		data.append({'Train':connection.get('departure').get('vehicle'),'Duration':str(datetime.datetime.fromtimestamp(int(connection.get('duration'))).strftime('%H:%M'))})
